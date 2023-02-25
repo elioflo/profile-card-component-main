@@ -1,0 +1,15 @@
+.stat {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--very-dark);
+  margin: 0;
+  span {
+    margin-top: .25rem;
+    color: var(--grayish-blue);
+    font-weight: 400;
+    font-size: 0.67rem;
+    letter-spacing: .1rem;
+  }
+}

@@ -1,0 +1,8 @@
+.container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: 'Kumbh Sans', sans-serif;
+  background: url('../../images/bg-pattern-top.svg') top left no-repeat,
+  url('../../images/bg-pattern-bottom.svg') 700px 360px no-repeat, var(--dark-cyan);
+}
