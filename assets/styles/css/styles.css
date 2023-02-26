@@ -324,7 +324,18 @@ template {
   display: grid;
   place-items: center;
   font-family: "Kumbh Sans", sans-serif;
-  background: url("../../images/bg-pattern-top.svg") top left no-repeat, url("../../images/bg-pattern-bottom.svg") 700px 360px no-repeat, var(--dark-cyan);
+  background: url("../../images/bg-pattern-top.svg") top -35rem left -47rem no-repeat, url("../../images/bg-pattern-bottom.svg") bottom -35rem right -47rem no-repeat, var(--dark-cyan);
+}
+@media (min-width: 768px) {
+  .container {
+    background: url("../../images/bg-pattern-top.svg") top -32rem left -30rem no-repeat, url("../../images/bg-pattern-bottom.svg") bottom -38rem right -30rem no-repeat, var(--dark-cyan);
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    background: url("../../images/bg-pattern-top.svg") top -32rem left -12rem no-repeat, url("../../images/bg-pattern-bottom.svg") bottom -38rem right -10rem no-repeat, var(--dark-cyan);
+    background-size: 60%;
+  }
 }
 
 .card {
@@ -389,7 +400,19 @@ template {
 }
 
 .footer {
-  display: none;
+  background-color: white;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  position: absolute;
+  bottom: 5vh;
+  box-shadow: 0 0.25rem rgba(0, 0, 0, 0.2);
+  width: calc(100% - 6rem);
+  max-width: 400px;
+  line-height: 1.25;
+}
+.footer a {
+  color: hsl(228deg, 45%, 44%);
 }
 
 /*# sourceMappingURL=styles.css.map */

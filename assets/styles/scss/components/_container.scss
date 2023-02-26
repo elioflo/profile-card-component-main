@@ -1,8 +1,21 @@
+@import '../abstract/media-queries';
+
 .container {
   min-height: 100vh;
   display: grid;
   place-items: center;
   font-family: 'Kumbh Sans', sans-serif;
-  background: url('../../images/bg-pattern-top.svg') top left no-repeat,
-  url('../../images/bg-pattern-bottom.svg') 700px 360px no-repeat, var(--dark-cyan);
+  background: url('../../images/bg-pattern-top.svg') top -35rem left -47rem no-repeat,
+  url('../../images/bg-pattern-bottom.svg') bottom -35rem right -47rem no-repeat, var(--dark-cyan);
+  
+  @include media-query($md-screen){
+    background: url('../../images/bg-pattern-top.svg') top -32rem left -30rem no-repeat,
+    url('../../images/bg-pattern-bottom.svg') bottom -38rem right -30rem no-repeat, var(--dark-cyan);
+  }
+
+  @include media-query($lg-screen){
+    background: url('../../images/bg-pattern-top.svg') top -32rem left -12rem no-repeat,
+    url('../../images/bg-pattern-bottom.svg') bottom -38rem right -10rem no-repeat, var(--dark-cyan);
+    background-size: 60%;
+  }
 }
